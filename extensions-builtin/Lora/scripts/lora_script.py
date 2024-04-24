@@ -55,6 +55,7 @@ def create_lora_json(obj: network.NetworkOnDisk):
         "alias": obj.alias,
         "path": obj.filename,
         "metadata": obj.metadata,
+        "user_metadata": extra_networks.get_user_metadata(obj.filename)
     }
 
 
